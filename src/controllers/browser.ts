@@ -103,13 +103,13 @@ export async function injectApi(page: Page) {
   if (injected) {
     return;
   }
-  
-  await page.waitForSelector('*[data-icon=chat]')
+
+  await page.waitForSelector('*[data-icon=chat]');
 
   // await page.evaluate(() => {
   //   if (document.querySelector('*[data-icon=chat]') !== null) { return true } else { return false }
   // });
- 
+
   await page.addScriptTag({
     path: require.resolve(path.join(__dirname, '../lib/wapi', 'wapi.js')),
   });

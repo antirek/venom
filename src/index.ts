@@ -72,4 +72,3 @@ export {
   CreateOptions,
   StatusFind,
 } from './controllers/initializer';
-

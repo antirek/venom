@@ -2,7 +2,7 @@ import * as boxen from 'boxen';
 import * as chalk from 'chalk';
 import latestVersion from 'latest-version';
 import * as Spinnies from 'spinnies';
-import {yo} from 'yoo-hoo';
+import { yo } from 'yoo-hoo';
 import { upToDate } from '../utils/semver';
 const { version } = require('../../package.json');
 
@@ -15,8 +15,8 @@ export function welcomeScreen() {
     return;
   }
   welcomeShown = true;
-   yo('VENOM', { color: 'cyan'});
-   console.log("\n\n")
+  yo('VENOM', { color: 'cyan' });
+  console.log('\n\n');
 }
 
 export async function checkUpdates(spinnies: Spinnies) {
